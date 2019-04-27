@@ -4,3 +4,4 @@
 - book:as - ArmorStand調整用の本
 - book:rp - ResourcePack取得用の本
 - book:tp - Teleport用の本
+test
