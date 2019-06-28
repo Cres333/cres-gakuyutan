@@ -10,3 +10,4 @@ scoreboard objectives add Candle minecraft.crafted:minecraft.diamond_hoe "蝋燭
 scoreboard players set @a Candle 0
 
 scoreboard players set scene Scene 3
+function game:scene03/open

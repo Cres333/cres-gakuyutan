@@ -1,18 +1,19 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "gakuyuutan",
   "ingredients": [
       {
-          "item": "minecraft:iron_hoe"
+          "item": "minecraft:red_dye"
       },
       {
-          "item": "minecraft:stone_hoe"
+          "item": "minecraft:blue_dye"
       },
       {
-          "item": "minecraft:golden_hoe"
+          "item": "minecraft:yellow_dye"
       }
   ],
   "result": {
-      "item": "minecraft:diamond_hoe",
+      "item": "minecraft:orange_dye",
       "count": 1
   }
 }

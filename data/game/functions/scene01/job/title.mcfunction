@@ -4,7 +4,8 @@ scoreboard players add time 1
 
 execute if score time Title matches 1 run gamemode spectator @a
 execute if score time Title matches 1 run title @a times 3 10 3
-execute if score time Title matches 1 run title @a subtitle "黒霧町"
+# 黒霧町
+execute if score time Title matches 1 run title @a subtitle "ｘ ｙ ｚ"
 execute if score time Title matches 1 run title @a title "第壱幕"
 
 tp @p[team=red] 54.0 64 -115 180 0
