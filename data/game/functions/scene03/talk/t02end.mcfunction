@@ -7,11 +7,11 @@ execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 execute if score n Talk matches 1 run tellraw @a "[？？？]---"
 execute if score n Talk matches 1 run scoreboard players set max Talk 2
 
-scoreboard players set click Any 1
-execute if score n Talk matches 1 run tellraw @p[team=blue] "何か聞きたいことはある？"
-execute if score n Talk matches 2 run tellraw @p[team=blue] ["",{"text":"[もう一度話を聞きたい]","color":"dark_red","clickEvent":{"action":"run_command","value":"/execute if score exec Any matches 0 if score click Any matches 1 if score state TalkState matches 2 run function game:scene03/talk/t02re"}},{"text":" "},{"text":"[能面の化物について聞く]","color":"blue","clickEvent":{"action":"run_command","value":"/execute if score exec Any matches 0 if score click Any matches 1 if score state TalkState matches 2 run function game:scene03/talk/t02kuro"}}]
+scoreboard players set hand Any 1
+execute if score n Talk matches 1 run tellraw @p[team=blue] "持ってきてくれた？"
+execute if score n Talk matches 2 run tellraw @p[team=blue] ["",{"text":"[手に持っているアイテムを渡す]","color":"dark_red","clickEvent":{"action":"run_command","value":"/execute if score exec Any matches 0 if score state TalkState matches 5 run function game:scene03/talk/item/book"}},{"text":" "},{"text":"[能面の化物について聞く]","color":"blue","clickEvent":{"action":"run_command","value":"/execute if score exec Any matches 0 if score state TalkState matches 5 run function game:scene03/talk/t02kuro"}}]
 
-execute if score n Talk matches 1 run tellraw @p[team=red] "＃Ｆ＃＃＃＃＃＃＃Ａ＃"
+execute if score n Talk matches 1 run tellraw @p[team=red] "＃＃ＳＧ＃＃＃＃Ｐ＃"
 
 execute unless score n Talk = max Talk run schedule function game:scene03/talk/t02sub 5s
 

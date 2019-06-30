@@ -4,7 +4,7 @@ scoreboard players add n Talk 1
 execute if score n Talk matches 1 run fill -58 67 8 -58 69 11 minecraft:barrier
 execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 
-execute if score n Talk matches 1 run tellraw @a "[幽霊]---"
+execute if score n Talk matches 1 run tellraw @a "[？？？]---"
 execute if score n Talk matches 1 run scoreboard players set max Talk 9
 
 execute if score n Talk matches 1 run tellraw @p[team=blue] "ここに何の用？…"
