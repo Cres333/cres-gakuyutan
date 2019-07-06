@@ -1,5 +1,5 @@
 scoreboard players set exec2 Any 1
-scoreboard players set click2 Any 0
+scoreboard players reset click2 Any
 scoreboard objectives add RTalk dummy "会話"
 scoreboard players add n RTalk 1
 execute if score n RTalk matches 1 run setblock -79 81 -1 minecraft:barrier

@@ -7,15 +7,15 @@ execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 execute if score n Talk matches 1 run tellraw @a "[？？？]---"
 execute if score n Talk matches 1 run scoreboard players set max Talk 9
 
-execute if score n Talk matches 1 run tellraw @p[team=blue] "ここに何の用？…"
-execute if score n Talk matches 2 run tellraw @p[team=blue] "私？私の名前はもう忘れてしまったわ"
+execute if score n Talk matches 1 run tellraw @p[team=blue] "ここに何の用でしょう？…"
+execute if score n Talk matches 2 run tellraw @p[team=blue] "私？私の名前はもう忘れてしまいました…"
 execute if score n Talk matches 3 run tellraw @p[team=blue] "どうやらあなた達はここに迷い込んでしまったようだけれど"
-execute if score n Talk matches 4 run tellraw @p[team=blue] "ここから出る手段なんて、残念ながら無いの"
-execute if score n Talk matches 5 run tellraw @p[team=blue] "もし、出られるとすれば、あなた達を連れてきた人にお願いすることね"
-execute if score n Talk matches 6 run tellraw @p[team=blue] "…そうね、詳しいことを知りたければ、これを持ってきてもらいましょうか"
+execute if score n Talk matches 4 run tellraw @p[team=blue] "ここから出る手段なんて、残念ながら無いかもしれません"
+execute if score n Talk matches 5 run tellraw @p[team=blue] "もし、出られるとすれば、あなた達を連れてきた人にお願いするといいかも…"
+execute if score n Talk matches 6 run tellraw @p[team=blue] "…そう、詳しいことを知りたければ、これを持ってきてくれますか？"
 execute if score n Talk matches 7 run tellraw @p[team=blue] "そこに書かれた物を持って来ることができたら、"
-execute if score n Talk matches 8 run tellraw @p[team=blue] "私が知っていることを教えてあげましょう"
-execute if score n Talk matches 9 run tellraw @p[team=blue] "あと、あなたのお友達には私の声が聞こえてないみたいね"
+execute if score n Talk matches 8 run tellraw @p[team=blue] "私が知っていることを教えてあげられるかもしれません"
+execute if score n Talk matches 9 run tellraw @p[team=blue] "あと、あなたのお友達には私の声が聞こえてないみたい…"
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "Ｊ＃＃＃＃Ｙ＃＃"
 execute if score n Talk matches 2 run tellraw @p[team=red] "＃＃＃Ｙ＃＃＃＃＃＃ｐＳ＃＃＃＃＃"

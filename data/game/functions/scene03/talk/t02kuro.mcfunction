@@ -8,16 +8,16 @@ execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 
 execute if score n Talk matches 1 run scoreboard players set max Talk 10
 
-execute if score n Talk matches 1 run tellraw @p[team=blue] "黒霧様という古くから伝わる伝承でね、神様のようなものよ"
-execute if score n Talk matches 2 run tellraw @p[team=blue] "黒霧様にお願いをするとそれに見合ったものを失う代わりに叶えてくれるの"
-execute if score n Talk matches 3 run tellraw @p[team=blue] "失うものは体だったり、記憶だったり、名前だったりするわ"
-execute if score n Talk matches 4 run tellraw @p[team=blue] "私もいくつかお願いを叶えてもらったんだろうけど、"
-execute if score n Talk matches 5 run tellraw @p[team=blue] "何を願ったのかさえも忘れてしまったわ…"
-execute if score n Talk matches 6 run tellraw @p[team=blue] "ただ、思い出せないってことは、きっと大切な何かを願ったんだわ"
+execute if score n Talk matches 1 run tellraw @p[team=blue] "黒霧様という古くから伝わる伝承で、神様のようなものです"
+execute if score n Talk matches 2 run tellraw @p[team=blue] "黒霧様にお願いをするとそれに見合ったものを失う代わりに叶えてくれます"
+execute if score n Talk matches 3 run tellraw @p[team=blue] "失うものは体だったり、記憶だったり、名前だったり…"
+execute if score n Talk matches 4 run tellraw @p[team=blue] "私もいくつかお願いを叶えてもらったんでしょうけど、"
+execute if score n Talk matches 5 run tellraw @p[team=blue] "何を願ったのかさえも忘れてしまいました…"
+execute if score n Talk matches 6 run tellraw @p[team=blue] "ただ、思い出せないってことは、きっと大切な何かを願った…"
 execute if score n Talk matches 7 run tellraw @p[team=blue] "黒霧様に渡したものを自分で思い出したり、手に入れたら、"
-execute if score n Talk matches 8 run tellraw @p[team=blue] "代わりに願ったものが失われてしまうんだけどね"
-execute if score n Talk matches 9 run tellraw @p[team=blue] "だけど、基本的に正面に立ったりして見つからない方がいいわ"
-execute if score n Talk matches 10 run tellraw @p[team=blue] "黒霧様はそれだけじゃなくて見つけたものに悪夢を見せるとも言うから"
+execute if score n Talk matches 8 run tellraw @p[team=blue] "代わりに願ったものが失われてしまうんですけどね"
+execute if score n Talk matches 9 run tellraw @p[team=blue] "だけど、基本的に正面に立ったりして見つからないでください"
+execute if score n Talk matches 10 run tellraw @p[team=blue] "黒霧様はそれだけじゃなくて見た者に悪夢を見せるとも言いますから"
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "＃＃＃＃＃＃Ｆｍ＃＃＃＃＃＃＃＃Ｆｆ＃＃＃＃＃＃＃"
 execute if score n Talk matches 2 run tellraw @p[team=red] "＃ｑ＃＃＃＃＃＃＃＃＃Ｏ＃＃＃＃＃＃＃＃＃ＣＬＵ＃＃＃＃＃＃＃＃＃＃"

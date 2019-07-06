@@ -7,10 +7,10 @@ execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 
 execute if score n Talk matches 1 run scoreboard players set max Talk 4
 
-execute if score n Talk matches 1 run tellraw @p[team=blue] "次は開かずの教室に行ってきて、なにか取ってきてちょうだい"
-execute if score n Talk matches 2 run tellraw @p[team=blue] "ただ、開かずの教室は普通に歩いて行くことができないの"
-execute if score n Talk matches 3 run tellraw @p[team=blue] "そのチョークで魔法陣を完成させてちょうだい"
-execute if score n Talk matches 4 run tellraw @p[team=blue] "完成させて光についていけば開かずの教室に行けると思うわ"
+execute if score n Talk matches 1 run tellraw @p[team=blue] "次は開かずの教室に行ってきて、なにか取ってきてくれますか？"
+execute if score n Talk matches 2 run tellraw @p[team=blue] "ただ、開かずの教室は普通に歩いて行くことができないんです"
+execute if score n Talk matches 3 run tellraw @p[team=blue] "そのチョークで魔法陣を完成させてみてください"
+execute if score n Talk matches 4 run tellraw @p[team=blue] "完成させて光についていけば開かずの教室に行けると思います"
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "＃＃ＡＦ＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃ＧＳ＃＃＃＃＃"
 execute if score n Talk matches 2 run tellraw @p[team=red] "Ｐ＃＃＃＃＃＃＃＃＃＃＃＃Ａｏ＃＃＃＃＃＃＃＃＃＃"

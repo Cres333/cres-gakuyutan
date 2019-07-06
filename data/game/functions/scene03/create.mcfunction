@@ -19,5 +19,8 @@ scoreboard objectives add Sight dummy "黒霧様の視界"
 scoreboard players set find Sight 0
 scoreboard players set @a Sight 0
 
+scoreboard objectives add Memory dummy "記憶演出"
+scoreboard players set *count Memory 0
+
 scoreboard players set scene Scene 3
 function game:scene03/open

@@ -8,7 +8,7 @@ execute if score n Talk matches 1 run tellraw @a "[？？？]---"
 execute if score n Talk matches 1 run scoreboard players set max Talk 2
 
 scoreboard players set select Any 1
-execute if score n Talk matches 1 run tellraw @p[team=blue] "何か聞きたいことはある？"
+execute if score n Talk matches 1 run tellraw @p[team=blue] "何か聞きたいことはありますか？"
 execute if score n Talk matches 2 run tellraw @p[team=blue] ["",{"text":"[もう一度話を聞きたい]","color":"dark_red","clickEvent":{"action":"run_command","value":"/execute if score exec Any matches 0 if score select Any matches 1 if score state TalkState matches 6 run function game:scene03/talk/t03re"}},{"text":" "},{"text":"[もう一人の幽霊について聞く]","color":"blue","clickEvent":{"action":"run_command","value":"/execute if score exec Any matches 0 if score select Any matches 1 if score state TalkState matches 6 run function game:scene03/talk/t03rei"}}]
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "＃Ｆ＃＃＃＃＃＃＃Ａ＃"

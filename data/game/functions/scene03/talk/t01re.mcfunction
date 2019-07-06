@@ -8,8 +8,8 @@ execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 execute if score n Talk matches 1 run scoreboard players set max Talk 3
 
 execute if score n Talk matches 1 run tellraw @p[team=blue] "そこに書かれた物を持って来ることができたら、"
-execute if score n Talk matches 2 run tellraw @p[team=blue] "私が知っていることを教えてあげましょう"
-execute if score n Talk matches 3 run tellraw @p[team=blue] "あと、あなたのお友達には私の声が聞こえてないみたいね"
+execute if score n Talk matches 2 run tellraw @p[team=blue] "私が知っていることを教えてあげます"
+execute if score n Talk matches 3 run tellraw @p[team=blue] "あと、あなたのお友達には私の声が聞こえてないみたい…"
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "＃＃＃ＦＦｐ＃＃＃＃＃＃Ｈｏ＃＃＃＃＃＃＃"
 execute if score n Talk matches 2 run tellraw @p[team=red] "＃ＰＬ＃＃＃＃＃＃＃ＥＬ＃＃＃＃＃＃＃"
