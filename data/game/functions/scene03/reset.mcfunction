@@ -5,8 +5,8 @@ fill -52 67 -2 -52 69 -5 minecraft:barrier
 fill -57 67 -7 -57 71 -9 minecraft:cobblestone
 
 # 魔法陣老朽化
-data modify entity @e[limit=1,type=minecraft:item_frame,x=-95,y=67,z=-14,distance=..3] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
-data modify entity @e[limit=1,type=minecraft:item_frame,x=-57,y=67,z=-22,distance=..3] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=-95,y=67,z=-14,distance=..3] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=-57,y=67,z=-22,distance=..3] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
 
 # ダンボールアイテム
 execute positioned -49 67 -48 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.1 minecraft:pink_dye
