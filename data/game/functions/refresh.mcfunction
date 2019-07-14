@@ -1,7 +1,18 @@
+# 環境
+time set 6000
+weather clear
+clear @a
+effect clear @a
+team empty red
+team empty blue
+
+# ログイン時の壁復活
+fill -4 63 -48 -12 66 -48 minecraft:glowstone
+
 # 人影復活
-data modify entity @e[limit=1,type=minecraft:item_frame,x=48.5,y=63,z=-82,distance=..1] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
-data modify entity @e[limit=1,type=minecraft:item_frame,x=74.5,y=63,z=32.5,distance=..1] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
-data modify entity @e[limit=1,type=minecraft:item_frame,x=101.5,y=63,z=98.5,distance=..1] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=48.5,y=63,z=-82,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=74.5,y=63,z=32.5,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=101.5,y=63,z=98.5,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
 
 # 猫削除
 execute as @e[type=minecraft:cat] at @s run tp @s ~ ~-200 ~
@@ -13,8 +24,8 @@ fill -52 67 -2 -52 69 -5 minecraft:barrier
 fill -57 67 -7 -57 71 -9 minecraft:cobblestone
 
 # 魔法陣老朽化
-data modify entity @e[limit=1,type=minecraft:item_frame,x=-95,y=67,z=-14,distance=..3] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
-data modify entity @e[limit=1,type=minecraft:item_frame,x=-57,y=67,z=-22,distance=..3] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=-95,y=67,z=-14,distance=..3] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=-57,y=67,z=-22,distance=..3] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:17}}
 setblock -95 73 -14 minecraft:black_concrete
 setblock -57 73 -22 minecraft:black_concrete
 

@@ -2,6 +2,7 @@
 scoreboard objectives add Title dummy
 scoreboard players add time 1
 
+execute if score time Title matches 1 run scoreboard objectives remove _Buss
 execute if score time Title matches 1 run gamemode spectator @a
 execute if score time Title matches 1 run title @a times 3 10 3
 # 黒霧町
