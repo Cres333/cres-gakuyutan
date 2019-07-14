@@ -14,5 +14,5 @@ tp @p[team=blue] 91 64 101.0 270 0
 execute unless score time Title matches 320 run schedule function game:scene02/job/title 1t
 
 execute if score time Title matches 320 run gamemode adventure @a
-execute if score time Title matches 320 run function game:scene03/create
+execute if score time Title matches 320 run function game:scene02/destroy
 execute if score time Title matches 320 run scoreboard objectives remove Title

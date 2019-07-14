@@ -1,3 +1,11 @@
+# 村人削除
+kill @e[type=minecraft:villager,tag=teacher]
+
+# 人影復活
+data modify entity @e[limit=1,type=minecraft:item_frame,x=48.5,y=63,z=-82,distance=..1] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=74.5,y=63,z=32.5,distance=..1] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=101.5,y=63,z=98.5,distance=..1] Item set *value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+
 # 最初の部屋のバリアブロック復活
 fill -52 67 -2 -52 69 -5 minecraft:barrier
 
@@ -33,3 +41,4 @@ execute positioned -93 67 -34 if block ~ ~ ~ minecraft:barrel{Items:[]} run repl
 
 # 燭台初期配置
 execute positioned -43 67 -3 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.20 minecraft:red_dye
+
