@@ -4,4 +4,5 @@ effect clear @a
 effect give @a minecraft:slowness 1000000 2 true
 effect give @a minecraft:jump_boost 1000000 129 true
 
+scoreboard players set *scene Grobal 4
 schedule function game:scene04/tp 5s

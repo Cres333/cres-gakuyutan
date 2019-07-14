@@ -1,4 +1,4 @@
-scoreboard players set exec Any 1
+scoreboard players set *exec Grobal 1
 scoreboard objectives add Talk dummy "会話"
 scoreboard players add n Talk 1
 execute if score n Talk matches 1 run fill -58 67 8 -58 69 11 minecraft:barrier
@@ -26,11 +26,11 @@ execute if score n Talk matches 7 run tellraw @p[team=red] "＃＃ｉ＃＃＃�
 execute if score n Talk matches 8 run tellraw @p[team=red] "Ｆ＃Ｙ＃＃＃＃"
 execute if score n Talk matches 8 run tellraw @p[team=red] "そこまでよ！！"
 
-execute unless score n Talk = max Talk run schedule function game:scene03/talk/t03end 5s
+execute unless score n Talk = max Talk run schedule function game:scene03/talk/t03/end 5s
 
 execute if score n Talk = max Talk run fill -58 67 8 -58 69 11 minecraft:air
 execute if score n Talk = max Talk run fill -58 67 -5 -58 69 -2 minecraft:air
-execute if score n Talk = max Talk run scoreboard players set exec Any 0
+execute if score n Talk = max Talk run scoreboard players set *exec Grobal 0
 execute if score n Talk = max Talk run scoreboard players set state TalkState -1
-execute if score n Talk = max Talk run function game:scene04/create
+execute if score n Talk = max Talk run function game:scene03/destroy
 execute if score n Talk = max Talk run scoreboard objectives remove Talk

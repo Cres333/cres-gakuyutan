@@ -1,0 +1,2 @@
+say @s
+say @p

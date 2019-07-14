@@ -1,4 +1,3 @@
-scoreboard players set exec Any 1
 scoreboard objectives add Talk dummy "会話"
 scoreboard players add n Talk 1
 
@@ -24,6 +23,5 @@ execute if score n Talk matches 10 run tellraw @p[team=red] "『ＡＹＪＹＵ�
 
 execute unless score n Talk = max Talk run schedule function game:scene04/q 5s
 
-execute if score n Talk = max Talk run scoreboard players set exec Any 0
 execute if score n Talk = max Talk run function game:scene04/a
 execute if score n Talk = max Talk run scoreboard objectives remove Talk

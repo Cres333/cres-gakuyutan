@@ -1,9 +1,9 @@
-execute if score *state _Movie matches 1 as @e[tag=movie] at @s run tp @s ^ ^ ^0.3
-execute if score *state _Movie matches 2 as @e[tag=movie] at @s run tp @s ^ ^ ^0.3
-execute if score *state _Movie matches 3 as @e[tag=movie] at @s run tp @s ^ ^ ^0.3
-execute if score *state _Movie matches 4 as @e[tag=movie] at @s run tp @s ^ ^ ^0.4
-execute if score *state _Movie matches 5 as @e[tag=movie] at @s run tp @s ^ ^ ^0.4
-execute if score *state _Movie matches 6 as @e[tag=movie] at @s run tp @s ^ ^ ^0.4
-execute if score *state _Movie matches 7 as @e[tag=movie] at @s run tp @s ^ ^ ^0.5
-execute if score *state _Movie matches 8 as @e[tag=movie] at @s run tp @s ^ ^ ^0.5
-execute if score *state _Movie matches 9 as @e[tag=movie] at @s run tp @s ^ ^ ^0.02
+execute if score *state _Movie matches 1 run tp @s ^ ^ ^0.3
+execute if score *state _Movie matches 2 run tp @s ^ ^ ^0.3
+execute if score *state _Movie matches 3 run tp @s ^ ^ ^0.3
+execute if score *state _Movie matches 4 run tp @s ^ ^ ^0.4
+execute if score *state _Movie matches 5 run tp @s ^ ^ ^0.4
+execute if score *state _Movie matches 6 run tp @s ^ ^ ^0.4
+execute if score *state _Movie matches 7 run tp @s ^ ^ ^0.5
+execute if score *state _Movie matches 8 run tp @s ^ ^ ^0.5
+execute if score *state _Movie matches 9 run tp @s ^ ^ ^0.02

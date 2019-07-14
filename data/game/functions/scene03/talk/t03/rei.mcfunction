@@ -1,4 +1,4 @@
-scoreboard players set exec Any 1
+scoreboard players set *exec Grobal 1
 scoreboard players set select Any 0
 scoreboard players set part Any 0
 scoreboard players set all Any 0
@@ -19,9 +19,9 @@ execute if score n Talk matches 1 run tellraw @p[team=red] "＃＃＃＃Ａｅ�
 execute if score n Talk matches 1 run tellraw @p[team=red] "Ｊ＃＃＃＃＃＃＃ＧＥ＃＃＃＃＃＃ｐ＃＃"
 execute if score n Talk matches 1 run tellraw @p[team=red] "＃ＶＦ＃＃＃＃＃＃＃＃ｐＵＢ＃＃"
 
-execute unless score n Talk = max Talk run schedule function game:scene03/talk/t03rei 5s
+execute unless score n Talk = max Talk run schedule function game:scene03/talk/t03/rei 5s
 
 execute if score n Talk = max Talk run fill -58 67 8 -58 69 11 minecraft:air
 execute if score n Talk = max Talk run fill -58 67 -5 -58 69 -2 minecraft:air
-execute if score n Talk = max Talk run scoreboard players set exec Any 0
+execute if score n Talk = max Talk run scoreboard players set *exec Grobal 0
 execute if score n Talk = max Talk run scoreboard objectives remove Talk
