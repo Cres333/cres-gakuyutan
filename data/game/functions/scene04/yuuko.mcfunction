@@ -25,4 +25,5 @@ execute if score n Talk matches 9 run tellraw @p[team=red] "＃Ｚ＃＃Ｊ＃�
 execute unless score n Talk = max Talk run schedule function game:scene04/yuuko 5s
 
 execute if score n Talk = max Talk run function game:scene04/movie/start
+execute if score n Talk = max Talk run scoreboard players set *end Grobal 1
 execute if score n Talk = max Talk run scoreboard objectives remove Talk

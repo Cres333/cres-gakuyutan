@@ -14,4 +14,5 @@ execute if score n Talk matches 6 run tellraw @a "そろそろ、この悪夢の
 execute unless score n Talk = max Talk run schedule function game:scene04/author 5s
 
 execute if score n Talk = max Talk run function game:scene04/movie/start
+execute if score n Talk = max Talk run scoreboard players set *end Grobal 3
 execute if score n Talk = max Talk run scoreboard objectives remove Talk

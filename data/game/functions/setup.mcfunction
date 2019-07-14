@@ -5,6 +5,8 @@ scoreboard objectives add Grobal dummy "グローバル変数"
 scoreboard players reset * Grobal
 # シーン
 scoreboard players set *scene Grobal 1
+# エンド分岐
+scoreboard players set *end Grobal 0
 # プレイヤー同士が近くにいるか
 scoreboard players set *with Grobal 0
 # プレイヤー(青)がレイナの近くにいるか
