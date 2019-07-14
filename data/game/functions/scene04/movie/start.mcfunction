@@ -1,6 +1,7 @@
 scoreboard objectives add _Movie dummy "エンディング向け"
 scoreboard players set *state _Movie 1
 scoreboard players set *wait _Movie 0
+scoreboard players set *stop _Freeze 0
 effect give @a minecraft:invisibility 100000 0 true
 effect give @a minecraft:levitation 100000 255 true
 bossbar remove light
