@@ -2,6 +2,7 @@ scoreboard objectives add Talk dummy "会話"
 scoreboard players add n Talk 1
 
 execute if score n Talk matches 1 run scoreboard players set max Talk 11
+execute if score n Talk matches 1 run tellraw @a "[？？？]---"
 
 execute if score n Talk matches 2 run tellraw @p[team=blue] "Ｐ＃＃＃＃＃＃＃＃ｅＬ＃＃＃＃＃＃"
 execute if score n Talk matches 3 run tellraw @p[team=blue] "＃＃Ａ＃＃＃＃＃＃＃Ｉ＃＃＃＃＃＃＃"
