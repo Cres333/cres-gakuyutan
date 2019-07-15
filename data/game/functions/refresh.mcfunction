@@ -13,7 +13,9 @@ fill -4 63 -48 -12 66 -48 minecraft:glowstone
 # 人影復活
 data modify entity @e[limit=1,type=minecraft:item_frame,x=48.5,y=63,z=-82,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
 data modify entity @e[limit=1,type=minecraft:item_frame,x=74.5,y=63,z=32.5,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+setblock 74 66 32 minecraft:sea_lantern
 data modify entity @e[limit=1,type=minecraft:item_frame,x=101.5,y=63,z=98.5,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+setblock 101 66 98 minecraft:sea_lantern
 data modify entity @e[limit=1,type=minecraft:item_frame,x=-34,y=64,z=76,distance=..2] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
 
 # 猫削除
