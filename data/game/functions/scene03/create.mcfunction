@@ -15,6 +15,7 @@ scoreboard players set *blue Light 0
 effect give @a minecraft:blindness 1000000 0 true
 effect give @a minecraft:slowness 1000000 3 true
 effect give @a minecraft:jump_boost 1000000 129 true
+effect give @a minecraft:saturation 1000000 100 true
 
 scoreboard objectives add Candle minecraft.crafted:minecraft.orange_dye "蝋燭作成"
 scoreboard players set @a Candle 0

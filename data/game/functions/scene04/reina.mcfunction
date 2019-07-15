@@ -22,7 +22,7 @@ execute if score n Talk matches 6 run tellraw @a "ＦＵ＃＃＃ｅＱ＃＃＃
 execute if score n Talk matches 7 run tellraw @a "ｐＢＵ、ｐＢＵ、ｐＢＵ＃＃＃ｐＢＵ、ＯＪＶＢｏ＃＃＃"
 execute if score n Talk matches 8 run tellraw @a "＃＃＃"
 execute if score n Talk matches 9 run tellraw @a "ＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡ"
-
+execute if score n Talk matches 10 run function game:scene04/earth
 
 execute unless score n Talk >= max Talk run schedule function game:scene04/reina 5s
 

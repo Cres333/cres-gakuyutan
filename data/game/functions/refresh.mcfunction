@@ -14,6 +14,7 @@ fill -4 63 -48 -12 66 -48 minecraft:glowstone
 data modify entity @e[limit=1,type=minecraft:item_frame,x=48.5,y=63,z=-82,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
 data modify entity @e[limit=1,type=minecraft:item_frame,x=74.5,y=63,z=32.5,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
 data modify entity @e[limit=1,type=minecraft:item_frame,x=101.5,y=63,z=98.5,distance=..1] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
+data modify entity @e[limit=1,type=minecraft:item_frame,x=-34,y=64,z=76,distance=..2] Item set value {id:"minecraft:bow",Count:1b,tag:{CustomModelData:7}}
 
 # 猫削除
 execute as @e[type=minecraft:cat] at @s run tp @s ~ ~-200 ~
@@ -35,7 +36,6 @@ execute positioned -49 67 -48 if block ~ ~ ~ minecraft:barrel{Items:[]} run repl
 execute positioned -57 67 -13 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.3 minecraft:pink_dye
 execute positioned -65 67 10 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.5 minecraft:green_dye
 execute positioned -97 67 0 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.7 minecraft:gray_dye
-execute positioned -82 67 -31 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.8 minecraft:white_dye
 execute positioned -76 67 -8 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.9 minecraft:black_dye
 
 # 蝋燭初期配置

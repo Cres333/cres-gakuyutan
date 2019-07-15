@@ -14,7 +14,7 @@ execute as @a if score @s Sight matches 1 run function game:scene03/thread/act/s
 
 # 黒霧様の行動
 execute if score *find Sight matches 0 run function game:scene03/thread/act/act
-execute unless score *find Sight matches 0 as @e[tag=kuro] at @s facing entity @p[scores={Sight=20}] feet run tp @s ^ ^ ^0.35 ~ ~
+execute unless score *find Sight matches 0 as @e[tag=kuro] at @s facing entity @p[scores={Sight=20}] feet run tp @s ^ ^ ^0.4 ~ ~
 
 # 黒神様の判定
 execute as @e[tag=kuro] at @s positioned ^ ^ ^-1.0 run scoreboard players set @a[distance=..1] Sight 30

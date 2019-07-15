@@ -4,8 +4,7 @@ scoreboard players add time Title 1
 
 execute if score time Title matches 1 run gamemode spectator @a
 execute if score time Title matches 1 run title @a times 60 200 60
-# サマヨウ
-execute if score time Title matches 1 run title @a subtitle "ＫｅｌＣ"
+execute if score time Title matches 1 run title @a subtitle "學 校"
 execute if score time Title matches 1 run title @a title "第弐幕"
 
 tp @p[team=red] 91 63 101.0 270 0

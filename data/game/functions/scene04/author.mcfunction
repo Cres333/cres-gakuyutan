@@ -10,6 +10,7 @@ execute if score n Talk matches 3 run tellraw @a "そうよ、私達は存在し
 execute if score n Talk matches 4 run tellraw @a "小説と同じように、ここはフィクションの世界"
 execute if score n Talk matches 5 run tellraw @a "さあ、目を覚ましなさい"
 execute if score n Talk matches 6 run tellraw @a "そろそろ、この悪夢の世界が壊れるわ"
+execute if score n Talk matches 6 run function game:scene04/earth
 
 execute unless score n Talk >= max Talk run schedule function game:scene04/author 5s
 

@@ -22,6 +22,8 @@ execute if score n Talk matches 6 run tellraw @p[team=red] "レイナ！レイ�
 execute if score n Talk matches 7 run tellraw @p[team=red] "私を置いて行かないで！また一人になんてなりたくない！！"
 execute if score n Talk matches 9 run tellraw @p[team=red] "＃Ｚ＃＃Ｊ＃＃＃＃Ｊ＃＃＃＃＃ｅ＃＃＃Ｍ＃＃＃Ｓ＃＃"
 
+execute if score n Talk matches 8 run function game:scene04/earth
+
 execute unless score n Talk >= max Talk run schedule function game:scene04/yuuko 5s
 
 execute if score n Talk >= max Talk run function game:scene04/movie/start

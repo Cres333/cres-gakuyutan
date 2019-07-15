@@ -28,6 +28,8 @@ execute if score n Talk matches 7 run tellraw @p[team=red] "＃＃＃＃ＵＢ�
 execute if score n Talk matches 8 run tellraw @p[team=red] "＃＃＃＃ＺＢ＃＃＃＃＃＃＃＃Ａｏ＃＃＃＃＃＃＃Ｑ＃＃＃"
 execute if score n Talk matches 9 run tellraw @p[team=red] "＃＃ｉ＃＃＃＃＃＃＃＃＃＃＃＃Ｓｆ＃＃＃＃＃＃"
 
+execute if score n Talk matches 9 positioned -72 67 5 if block ~ ~ ~ minecraft:barrel run replaceitem block ~ ~ ~ container.8 minecraft:white_dye
+
 execute unless score n Talk >= max Talk run schedule function game:scene03/talk/t03/start 5s
 
 execute if score n Talk >= max Talk run fill -58 67 8 -58 69 11 minecraft:air
