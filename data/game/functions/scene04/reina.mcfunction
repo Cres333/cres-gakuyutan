@@ -24,8 +24,8 @@ execute if score n Talk matches 8 run tellraw @a "＃＃＃"
 execute if score n Talk matches 9 run tellraw @a "ＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡＡ"
 
 
-execute unless score n Talk = max Talk run schedule function game:scene04/reina 5s
+execute unless score n Talk >= max Talk run schedule function game:scene04/reina 5s
 
-execute if score n Talk = max Talk run function game:scene04/movie/start
-execute if score n Talk = max Talk run scoreboard players set *end Grobal 2
-execute if score n Talk = max Talk run scoreboard objectives remove Talk
+execute if score n Talk >= max Talk run function game:scene04/movie/start
+execute if score n Talk >= max Talk run scoreboard players set *end Grobal 2
+execute if score n Talk >= max Talk run scoreboard objectives remove Talk

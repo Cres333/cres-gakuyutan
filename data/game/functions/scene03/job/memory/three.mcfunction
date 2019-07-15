@@ -12,9 +12,9 @@ execute if score n _Mem3 matches 3 run tellraw @p[scores={Memory=3}] "「たっ�
 execute if score n _Mem3 matches 4 run tellraw @p[scores={Memory=3}] "息を止める。そこにはただただ静寂な闇が広がっている。"
 execute if score n _Mem3 matches 5 run tellraw @p[scores={Memory=3}] "覚悟を決めた痛みとともに、世界は鮮やかな赤に染まっていった。"
 
-execute unless score n _Mem3 = max _Mem3 run schedule function game:scene03/job/memory/three 5s
+execute unless score n _Mem3 >= max _Mem3 run schedule function game:scene03/job/memory/three 5s
 
-execute if score n _Mem3 = max _Mem3 as @p[team=red,scores={Memory=3}] run function game:scene03/job/over/red
-execute if score n _Mem3 = max _Mem3 as @p[team=blue,scores={Memory=3}] run function game:scene03/job/over/blue
-execute if score n _Mem3 = max _Mem3 run scoreboard players set @p[scores={Memory=3}] Memory 0
-execute if score n _Mem3 = max _Mem3 run scoreboard players set end _Mem3 1
+execute if score n _Mem3 >= max _Mem3 as @p[team=red,scores={Memory=3}] run function game:scene03/job/over/red
+execute if score n _Mem3 >= max _Mem3 as @p[team=blue,scores={Memory=3}] run function game:scene03/job/over/blue
+execute if score n _Mem3 >= max _Mem3 run scoreboard players set @p[scores={Memory=3}] Memory 0
+execute if score n _Mem3 >= max _Mem3 run scoreboard objectives remove _Mem3

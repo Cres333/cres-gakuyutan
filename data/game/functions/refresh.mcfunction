@@ -5,6 +5,7 @@ clear @a
 effect clear @a
 team empty red
 team empty blue
+bossbar remove light
 
 # ログイン時の壁復活
 fill -4 63 -48 -12 66 -48 minecraft:glowstone

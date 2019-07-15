@@ -1,5 +1,5 @@
 team join red @p
-team join blue @p[team=]
+team join blue @p[team=!red]
 weather rain 100000
 time set 21000
 replaceitem entity @a armor.head minecraft:carved_pumpkin{display:{Name:"\"外さないでください\""}}
@@ -9,3 +9,5 @@ scoreboard players set *stop _Buss 0
 schedule function game:scene01/job/title 15s
 schedule function game:scene01/message 10s
 function game:scene01/job/buss
+
+scoreboard objectives remove _OK

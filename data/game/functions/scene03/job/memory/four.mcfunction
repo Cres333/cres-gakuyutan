@@ -12,9 +12,9 @@ execute if score n _Mem4 matches 3 run tellraw @p[scores={Memory=4}] "それは�
 execute if score n _Mem4 matches 4 run tellraw @p[scores={Memory=4}] "果たして、その理解者は彼女たちの世界に居るのだろうか。"
 execute if score n _Mem4 matches 5 run tellraw @p[scores={Memory=4}] "それを知る人は彼女たちの世界に居たのだろうか。"
 
-execute unless score n _Mem4 = max _Mem4 run schedule function game:scene03/job/memory/four 5s
+execute unless score n _Mem4 >= max _Mem4 run schedule function game:scene03/job/memory/four 5s
 
-execute if score n _Mem4 = max _Mem4 as @p[team=red,scores={Memory=4}] run function game:scene03/job/over/red
-execute if score n _Mem4 = max _Mem4 as @p[team=blue,scores={Memory=4}] run function game:scene03/job/over/blue
-execute if score n _Mem4 = max _Mem4 run scoreboard players set @p[scores={Memory=4}] Memory 0
-execute if score n _Mem4 = max _Mem4 run scoreboard players set end _Mem4 1
+execute if score n _Mem4 >= max _Mem4 as @p[team=red,scores={Memory=4}] run function game:scene03/job/over/red
+execute if score n _Mem4 >= max _Mem4 as @p[team=blue,scores={Memory=4}] run function game:scene03/job/over/blue
+execute if score n _Mem4 >= max _Mem4 run scoreboard players set @p[scores={Memory=4}] Memory 0
+execute if score n _Mem4 >= max _Mem4 run scoreboard objectives remove _Mem4

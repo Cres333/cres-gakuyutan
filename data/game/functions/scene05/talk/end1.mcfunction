@@ -12,7 +12,7 @@ execute if score n Talk matches 4 run tellraw @a "幹瀬さんには親友の金
 execute if score n Talk matches 5 run tellraw @a "残念ながら金町さんは自ら命を失なってしまったけど"
 execute if score n Talk matches 6 run tellraw @a "幹瀬さんは金町さんの夢だった、小説家になったそうだよ"
 
-execute unless score n Talk = max Talk run schedule function game:scene05/talk/end1 5s
+execute unless score n Talk >= max Talk run schedule function game:scene05/talk/end1 5s
 
-execute if score n Talk = max Talk run scoreboard players set *exec Grobal 0
-execute if score n Talk = max Talk run scoreboard objectives remove Talk
+execute if score n Talk >= max Talk run scoreboard players set *exec Grobal 0
+execute if score n Talk >= max Talk run scoreboard objectives remove Talk

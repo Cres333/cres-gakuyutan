@@ -28,10 +28,10 @@ execute if score n Talk matches 7 run tellraw @p[team=red] "＃＃＃＃ＵＢ�
 execute if score n Talk matches 8 run tellraw @p[team=red] "＃＃＃＃ＺＢ＃＃＃＃＃＃＃＃Ａｏ＃＃＃＃＃＃＃Ｑ＃＃＃"
 execute if score n Talk matches 9 run tellraw @p[team=red] "＃＃ｉ＃＃＃＃＃＃＃＃＃＃＃＃Ｓｆ＃＃＃＃＃＃"
 
-execute unless score n Talk = max Talk run schedule function game:scene03/talk/t03/start 5s
+execute unless score n Talk >= max Talk run schedule function game:scene03/talk/t03/start 5s
 
-execute if score n Talk = max Talk run fill -58 67 8 -58 69 11 minecraft:air
-execute if score n Talk = max Talk run fill -58 67 -5 -58 69 -2 minecraft:air
-execute if score n Talk = max Talk run scoreboard players set *exec Grobal 0
-execute if score n Talk = max Talk run scoreboard players set state TalkState 6
-execute if score n Talk = max Talk run scoreboard objectives remove Talk
+execute if score n Talk >= max Talk run fill -58 67 8 -58 69 11 minecraft:air
+execute if score n Talk >= max Talk run fill -58 67 -5 -58 69 -2 minecraft:air
+execute if score n Talk >= max Talk run scoreboard players set *exec Grobal 0
+execute if score n Talk >= max Talk run scoreboard players set state TalkState 6
+execute if score n Talk >= max Talk run scoreboard objectives remove Talk

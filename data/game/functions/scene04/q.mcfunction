@@ -21,7 +21,7 @@ execute if score n Talk matches 7 run tellraw @p[team=red] "だって、ここ�
 execute if score n Talk matches 8 run tellraw @p[team=red] "…さあ、私の望む答えを聞かせてもらおうかしら？"
 execute if score n Talk matches 11 run tellraw @p[team=red] "『ＡＹＪＹＵｓ＃ｒＰＬＹＬｔｋＣＹＵｓ…』"
 
-execute unless score n Talk = max Talk run schedule function game:scene04/q 5s
+execute unless score n Talk >= max Talk run schedule function game:scene04/q 5s
 
-execute if score n Talk = max Talk run function game:scene04/a
-execute if score n Talk = max Talk run scoreboard objectives remove Talk
+execute if score n Talk >= max Talk run function game:scene04/a
+execute if score n Talk >= max Talk run scoreboard objectives remove Talk

@@ -17,10 +17,10 @@ execute if score n RTalk matches 7 run tellraw @p[team=red] "でも、集めな�
 execute if score n RTalk matches 8 run tellraw @p[team=red] "だから、あなたもここで誰にも何も言われない世界で、"
 execute if score n RTalk matches 9 run tellraw @p[team=red] "一緒に遊びましょ？"
 
-execute unless score n RTalk = max RTalk run schedule function game:scene03/talk/t02/red 5s
+execute unless score n RTalk >= max RTalk run schedule function game:scene03/talk/t02/red 5s
 
-execute if score n RTalk = max RTalk run setblock -79 81 -1 minecraft:air
-execute if score n RTalk = max RTalk run setblock -79 81 -12 minecraft:air
-execute if score n RTalk = max RTalk run scoreboard players set *exec2 Grobal 0
-execute if score n RTalk = max RTalk run scoreboard players set state TalkState 4
-execute if score n RTalk = max RTalk run scoreboard objectives remove RTalk
+execute if score n RTalk >= max RTalk run setblock -79 81 -1 minecraft:air
+execute if score n RTalk >= max RTalk run setblock -79 81 -12 minecraft:air
+execute if score n RTalk >= max RTalk run scoreboard players set *exec2 Grobal 0
+execute if score n RTalk >= max RTalk run scoreboard players set state TalkState 4
+execute if score n RTalk >= max RTalk run scoreboard objectives remove RTalk

@@ -3,15 +3,15 @@ scoreboard players set @a Light 0
 # 盲目対象検知
 execute as @a store success score @s Light if entity @s[nbt={Inventory:[{id:"minecraft:orange_dye"}]}]
 
+# 蝋燭ゲージ回復
+execute as @a if score @s Candle matches 1.. run function game:scene03/thread/param/heal
+
 # 蝋燭ゲージ0ならアイテム交換
 execute as @a if score @s Light matches 1 if score *value Light matches 0 run function game:scene03/thread/param/zero
 
 # 蝋燭ゲージ調整
 execute as @a if score @s Light matches 1 unless score *value Light matches ..0 run scoreboard players remove *value Light 1
 execute store result bossbar light value run scoreboard players get *value Light
-
-# 蝋燭ゲージ回復
-execute as @a if score @s Candle matches 1.. run function game:scene03/thread/param/heal
 
 # 蝋燭持っていない人も近くにいれば盲目にならない
 execute unless score state TalkState matches 3..4 as @a if score @s Light matches 1 at @s if score *with Grobal matches 1 run scoreboard players set @a Light 1

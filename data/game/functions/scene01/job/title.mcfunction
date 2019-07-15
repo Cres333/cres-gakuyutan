@@ -1,12 +1,12 @@
 # 第一章のタイトル
 scoreboard objectives add Title dummy
-scoreboard players add time 1
+scoreboard players add time Title 1
 
 execute if score time Title matches 1 run scoreboard objectives remove _Buss
 execute if score time Title matches 1 run gamemode spectator @a
-execute if score time Title matches 1 run title @a times 3 10 3
+execute if score time Title matches 1 run title @a times 60 200 60
 # 黒霧町
-execute if score time Title matches 1 run title @a subtitle "ｘ ｙ ｚ"
+execute if score time Title matches 1 run title @a subtitle "ｘｙｚ"
 execute if score time Title matches 1 run title @a title "第壱幕"
 
 tp @p[team=red] 54.0 64 -115 180 0

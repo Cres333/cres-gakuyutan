@@ -13,6 +13,9 @@ scoreboard players set *with Grobal 0
 scoreboard players set *withBlue Grobal 0
 # プレイヤー(赤)がユウコの近くにいるか
 scoreboard players set *withRed Grobal 0
+# 会話実行中
+scoreboard players set *exec Grobal 0
+scoreboard players set *exec2 Grobal 0
 
 team add red
 team add blue
@@ -26,3 +29,5 @@ team modify blue seeFriendlyInvisibles true
 weather clear
 time set 6000
 clear @a
+
+function game:scene01/create

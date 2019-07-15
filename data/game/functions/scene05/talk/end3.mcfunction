@@ -12,7 +12,7 @@ execute if score n Talk matches 4 run tellraw @a "あの小説は金町さんと
 execute if score n Talk matches 5 run tellraw @a "最近もちょっと顔を見せてくれたけども、"
 execute if score n Talk matches 6 run tellraw @a "今でも二人とも仲が良さそうだったよ"
 
-execute unless score n Talk = max Talk run schedule function game:scene05/talk/end3 5s
+execute unless score n Talk >= max Talk run schedule function game:scene05/talk/end3 5s
 
-execute if score n Talk = max Talk run scoreboard players set *exec Grobal 0
-execute if score n Talk = max Talk run scoreboard objectives remove Talk
+execute if score n Talk >= max Talk run scoreboard players set *exec Grobal 0
+execute if score n Talk >= max Talk run scoreboard objectives remove Talk
