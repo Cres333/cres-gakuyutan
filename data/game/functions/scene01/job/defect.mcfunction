@@ -9,5 +9,5 @@ scoreboard players operation *sum Defect += @a Defect
 
 execute unless score *sum Defect matches 2 run schedule function game:scene01/job/defect 1s
 
-execute if score *sum Defect matches 2 run function game:scene01/buss
+execute if score *sum Defect matches 2 run function game:scene01/bus
 execute if score *sum Defect matches 2 run scoreboard objectives remove Defect

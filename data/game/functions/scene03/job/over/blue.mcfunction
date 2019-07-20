@@ -7,6 +7,7 @@ execute if score *t _OverBlue matches 1 run tp @p[team=blue] -73 67.5 -49 180 -9
 
 execute as @p[team=blue] at @s run tp @s -73 67.5 -49 ~5 -90
 
+execute if score *t _OverBlue matches 1 as @p[team=blue] at @s run playsound minecraft:game_over master @s ~ ~ ~ 1 1
 execute unless score *t _OverBlue matches 60 run schedule function game:scene03/job/over/blue 1t
 
 execute if score *t _OverBlue matches 60 store success score *clear _OverBlue run clear @p[team=blue] minecraft:blue_dye 1

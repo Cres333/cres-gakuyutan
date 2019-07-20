@@ -8,3 +8,4 @@ bossbar remove light
 summon minecraft:armor_stand -40.00 64 76.50 {Rotation:[-90F,0F],Tags:["movie"],Marker:1b,Invisible:1b}
 execute as @e[tag=movie] at @s anchored feet run tp @a ~ ~ ~ ~ ~
 function game:scene04/movie/job
+execute as @a at @s run playsound minecraft:earth master @s ~ ~ ~ 1 0.4

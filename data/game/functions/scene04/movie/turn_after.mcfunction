@@ -5,6 +5,7 @@ execute if score *wool _Turn matches 4 as @e[tag=movie] at @s run tp @s ~ 64 ~ f
 execute if score *wool _Turn matches 5 as @e[tag=movie] at @s run tp @s ~ 64 ~ facing 2 64 86
 execute if score *wool _Turn matches 6 as @e[tag=movie] at @s run tp @s ~ 64 ~ facing 31 64 84
 execute if score *wool _Turn matches 7 as @e[tag=movie] at @s run tp @s 29 64 84 facing 29 118 84
+execute if score *wool _Turn matches 7 as @a at @s run playsound minecraft:kurokirisama master @s ~ ~ ~ 1 1
 
 execute if score *wool _Turn matches 7 as @e[tag=movie] run data merge entity @s {NoGrabity:1b}
 execute if score *wool _Turn matches 1..7 as @e[tag=movie] at @s anchored feet run tp @a ~ ~ ~ ~ ~
