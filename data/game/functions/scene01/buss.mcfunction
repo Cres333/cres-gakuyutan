@@ -10,4 +10,8 @@ schedule function game:scene01/job/title 15s
 schedule function game:scene01/message 10s
 function game:scene01/job/buss
 
+# レシピ削除
+recipe take @a *
+gamerule doLimitedCrafting true
+
 scoreboard objectives remove _OK

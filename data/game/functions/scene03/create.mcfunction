@@ -29,13 +29,11 @@ scoreboard players set @a Sight 0
 
 scoreboard objectives add Memory dummy "記憶演出"
 scoreboard players set *count Memory 0
+scoreboard players set *item Memory 0
 
 tp @p[team=red] -47 67 -3 0 25
 tp @p[team=blue] -49 67 -3 0 25
 gamemode adventure @a
-
-recipe give @a game:crafting_candle
-recipe give @a game:crafting_full_candle
 
 scoreboard players set *scene Grobal 3
 function game:scene03/job/open

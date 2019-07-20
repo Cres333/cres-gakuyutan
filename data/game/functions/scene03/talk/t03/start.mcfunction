@@ -9,7 +9,7 @@ execute if score n Talk matches 1 run fill -58 67 -5 -58 69 -2 minecraft:barrier
 execute if score n Talk matches 1 run scoreboard players set max Talk 9
 
 execute if score n Talk matches 1 run tellraw @p[team=blue] "これは…メモみたいですね"
-execute if score n Talk matches 2 run tellraw @p[team=blue] "ここにあるってことは大切なもののはず"
+execute if score n Talk matches 2 run tellraw @p[team=blue] "ここにあるってことは大切なもののはず…"
 execute if score n Talk matches 3 run tellraw @p[team=blue] "私がこれを読んでいる間に、あなた達には黒霧様が持っている、"
 execute if score n Talk matches 4 run tellraw @p[team=blue] "記憶を見てきていただけませんか？"
 execute if score n Talk matches 5 run tellraw @p[team=blue] "黒霧様は私から奪った記憶を持っています"
@@ -36,4 +36,5 @@ execute if score n Talk >= max Talk run fill -58 67 8 -58 69 11 minecraft:air
 execute if score n Talk >= max Talk run fill -58 67 -5 -58 69 -2 minecraft:air
 execute if score n Talk >= max Talk run scoreboard players set *exec Grobal 0
 execute if score n Talk >= max Talk run scoreboard players set state TalkState 6
+execute if score n Talk >= max Talk run schedule function game:scene03/talk/separate 1s
 execute if score n Talk >= max Talk run scoreboard objectives remove Talk

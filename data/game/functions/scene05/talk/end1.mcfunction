@@ -15,4 +15,5 @@ execute if score n Talk matches 6 run tellraw @a "幹瀬さんは金町さんの
 execute unless score n Talk >= max Talk run schedule function game:scene05/talk/end1 5s
 
 execute if score n Talk >= max Talk run scoreboard players set *exec Grobal 0
+execute if score n Talk >= max Talk run schedule function game:scene03/talk/separate 1s
 execute if score n Talk >= max Talk run scoreboard objectives remove Talk

@@ -25,4 +25,5 @@ execute if score n Talk matches 11 run tellraw @p[team=red] "『ＡＹＪＹＵ�
 execute unless score n Talk >= max Talk run schedule function game:scene04/q 5s
 
 execute if score n Talk >= max Talk run function game:scene04/a
+execute if score n Talk >= max Talk run schedule function game:scene03/talk/separate 1s
 execute if score n Talk >= max Talk run scoreboard objectives remove Talk

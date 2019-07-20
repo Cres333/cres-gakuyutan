@@ -1,9 +1,12 @@
-tp @p[team=red] -60 65 39 90 0
-tp @p[team=blue] -60 65 35 90 0
+tp @a 26 64 91 -90 -4
 clear @a
-effect clear @a
 weather clear
-time set 6000
 effect give @a minecraft:saturation 1000000 100 true
 scoreboard players set *scene Grobal 5
-schedule function game:scene05/message 5s
+scoreboard objectives add _Image dummy "画像"
+scoreboard players set *end _Image 0
+
+function game:scene05/image_end
+
+schedule function game:scene05/image_end 2s
+schedule function game:scene05/message 7s

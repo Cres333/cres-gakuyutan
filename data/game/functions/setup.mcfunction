@@ -1,6 +1,9 @@
 scoreboard objectives add Villager minecraft.custom:minecraft.talked_to_villager "話しかける"
 scoreboard players reset * Villager
 
+scoreboard objectives add Food food "食料ゲージ"
+scoreboard players reset * Food
+
 scoreboard objectives add Grobal dummy "グローバル変数"
 scoreboard players reset * Grobal
 # シーン
@@ -13,9 +16,18 @@ scoreboard players set *with Grobal 0
 scoreboard players set *withBlue Grobal 0
 # プレイヤー(赤)がユウコの近くにいるか
 scoreboard players set *withRed Grobal 0
+# ロウソク補充
+scoreboard players set *light Grobal 0
 # 会話実行中
 scoreboard players set *exec Grobal 0
 scoreboard players set *exec2 Grobal 0
+
+scoreboard objectives add Gimmick dummy "ギミック"
+scoreboard players reset * Gimmick
+# G
+scoreboard players set *g Gimmick 0
+# Spider
+scoreboard players set *spider Gimmick 0
 
 team add red
 team add blue

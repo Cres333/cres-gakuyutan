@@ -34,4 +34,5 @@ execute if score n Talk >= max Talk run fill -58 67 -5 -58 69 -2 minecraft:air
 execute if score n Talk >= max Talk run scoreboard players set *exec Grobal 0
 execute if score n Talk >= max Talk run scoreboard players set state TalkState 1
 execute if score n Talk >= max Talk run function game:scene03/t01end
+execute if score n Talk >= max Talk run schedule function game:scene03/talk/separate 1s
 execute if score n Talk >= max Talk run scoreboard objectives remove Talk

@@ -23,4 +23,5 @@ execute if score n RTalk >= max RTalk run setblock -79 81 -1 minecraft:air
 execute if score n RTalk >= max RTalk run setblock -79 81 -12 minecraft:air
 execute if score n RTalk >= max RTalk run scoreboard players set *exec2 Grobal 0
 execute if score n RTalk >= max RTalk run scoreboard players set state TalkState 4
+execute if score n Talk >= max Talk run schedule function game:scene03/talk/separate_red 1s
 execute if score n RTalk >= max RTalk run scoreboard objectives remove RTalk

@@ -56,14 +56,19 @@ execute positioned -87 80 -9 if block ~ ~ ~ minecraft:barrel{Items:[]} run repla
 execute positioned -64 67 -29 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.16 minecraft:yellow_dye
 execute positioned -43 67 -1 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.17 minecraft:yellow_dye
 execute positioned -99 67 -6 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.18 minecraft:yellow_dye
-execute positioned -93 67 -34 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.19 minecraft:yellow_dye
 execute positioned -87 80 -9 if block ~ ~ ~ minecraft:barrel run replaceitem block ~ ~ ~ container.18 minecraft:yellow_dye
 
 # 燭台初期配置
 execute positioned -43 67 -3 if block ~ ~ ~ minecraft:barrel{Items:[]} run replaceitem block ~ ~ ~ container.20 minecraft:red_dye
+execute positioned -43 67 -3 if block ~ ~ ~ minecraft:barrel run replaceitem block ~ ~ ~ container.8 written_book{pages:["{\"text\":\"明かりを灯すには、\\n火のついた燭台を作る必要がある\\n\\n火のついた燭台は、\\n- 燭台(ショクダイ)\\n- 蝋燭(ロウソク)\\n- マッチ\\nを組み合わせれば良い\"}","{\"text\":\"火のついた燭台は、\\n蝋燭が無くなれば火が消える\\n\\n火が消える前に、\\n- 火のついた燭台\\n- 蝋燭(ロウソク)\\nを組み合わせれば蝋燭を\\n交換できる\"}","{\"text\":\"火のついた燭台を持っている人の\\n近くにいる人も周りが明るくなる\\n\\n離れれば暗くなる\"}"],title:"取扱説明書",author:""}
+execute positioned -43 67 -3 if block ~ ~ ~ minecraft:barrel run replaceitem block ~ ~ ~ container.10 minecraft:knowledge_book{Recipes:["game:crafting_candle","game:crafting_full_candle"],display:{Name:"\"燭台の作成方法 (1人1冊)\""}}
+execute positioned -43 67 -3 if block ~ ~ ~ minecraft:barrel run replaceitem block ~ ~ ~ container.11 minecraft:knowledge_book{Recipes:["game:crafting_candle","game:crafting_full_candle"],display:{Name:"\"燭台の作成方法 (1人1冊)\""}}
+
+# Gダンボール
+setblock -93 67 -34 minecraft:barrel[facing=east]
 
 # 開かずの間の封印
-setblock -57 68 -28 minecraft:barrier
+fill -57 67 -28 -57 68 -28 minecraft:cobblestone
 
 # クリア時のバリア削除
 fill 84 66 61 78 64 61 air
