@@ -12,7 +12,7 @@ execute if score n Talk matches 5 run tellraw @p[team=blue] "＃＃＃＃Ｂ＃�
 execute if score n Talk matches 11 run tellraw @p[team=blue] "『今すぐ逃げて！この世界が壊れます！』"
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "…突然、何を言い出すの？"
-execute if score n Talk matches 2 run tellraw @p[team=red] "それは私の望む答えは、そんな言葉じゃないわ"
+execute if score n Talk matches 2 run tellraw @p[team=red] "それは…私の望む答えは、そんな言葉じゃないわ"
 execute if score n Talk matches 3 run tellraw @p[team=red] "その名前は…その、名前は……"
 execute if score n Talk matches 4 run tellraw @p[team=red] "あれ？…おかしい、聞いたことがあるはずなのに、"
 execute if score n Talk matches 5 run tellraw @p[team=red] "忘れちゃいけないはずなのに、思い出せない？"

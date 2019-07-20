@@ -14,7 +14,7 @@ execute if score n Talk matches 7 run tellraw @p[team=blue] "＃＃ＥＢＳＢ�
 execute if score n Talk matches 9 run tellraw @p[team=blue] "『早く！この世界が壊れてしまう前に！今すぐ逃げて！』"
 
 execute if score n Talk matches 1 run tellraw @p[team=red] "…突然、何を言い出すの？"
-execute if score n Talk matches 2 run tellraw @p[team=red] "それは私の望む答えは、そんな言葉じゃないわ"
+execute if score n Talk matches 2 run tellraw @p[team=red] "それは…私の望む答えは、そんな言葉じゃないわ"
 execute if score n Talk matches 3 run tellraw @p[team=red] "その名前は…その、名前は……"
 execute if score n Talk matches 4 run tellraw @p[team=red] "私の…名前？"
 execute if score n Talk matches 5 run tellraw @p[team=red] "駄目だ！思い出すな！私とレイナの世界が！！"
