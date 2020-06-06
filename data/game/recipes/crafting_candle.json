@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gakuyuutan",
+  "ingredients": [
+      {
+          "item": "minecraft:orange_banner"
+      },
+      {
+          "item": "minecraft:blue_banner"
+      }
+  ],
+  "result": {
+      "item": "minecraft:orange_banner",
+      "count": 1
+  }
+}

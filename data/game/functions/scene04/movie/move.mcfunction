@@ -1,0 +1,9 @@
+execute if score *state _Movie matches 1 run tp @s ^ ^ ^0.3
+execute if score *state _Movie matches 2 run tp @s ^ ^ ^0.3
+execute if score *state _Movie matches 3 run tp @s ^ ^ ^0.3
+execute if score *state _Movie matches 4 run tp @s ^ ^ ^0.4
+execute if score *state _Movie matches 5 run tp @s ^ ^ ^0.4
+execute if score *state _Movie matches 6 run tp @s ^ ^ ^0.4
+execute if score *state _Movie matches 7 run tp @s ^ ^ ^0.5
+execute if score *state _Movie matches 8 run tp @s ^ ^ ^0.5
+execute if score *state _Movie matches 9 run tp @s ^ ^ ^0.01
